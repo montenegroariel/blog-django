@@ -117,9 +117,10 @@
           </div>
         </div>
       </div>
-
     </div><!-- /.carousel -->
+    <div id="desplegable" style="height: 50px;width: 50px;background-color: red; display: none">
 
+    </div>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -172,5 +173,15 @@
     <script src="assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+     $("#id_boton").click(function(){
+        $("#desplegable").slideToggle();
+    });
+
+    </script>
+
+
+
   </body>
 </html>
