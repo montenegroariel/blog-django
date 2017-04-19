@@ -80,10 +80,17 @@ body {
   margin-left: 10px;
 }
 
-.container .marketing{
-  width: 100%;
+.bienvenida {
+  background-color: white;
+  height: auto;
 }
 
+.bienvenida h1{
+  color: #1b6d85;
+  font-family: "NanumBarunGothic";
+  font-weight: bold;
+  text-align: center;
+}
 
 /* Featurettes
 ------------------------- */
