@@ -4,7 +4,8 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: #cce4b4ff;
+  background-color: #0269c4ff;
 }
 
 
@@ -69,12 +70,18 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
+
 .marketing h2 {
   font-weight: normal;
 }
+
 .marketing .col-lg-3 p {
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.container .marketing{
+  width: 100%;
 }
 
 
