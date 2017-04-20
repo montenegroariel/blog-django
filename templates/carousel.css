@@ -4,8 +4,8 @@
 
 body {
   padding-bottom: 40px;
-  color: #cce4b4ff;
-  background-color: #0269c4ff;
+  color: #cce4b4;
+  background-color: #0269c4;
 }
 
 
@@ -32,6 +32,8 @@ body {
 }
 .navbar-wrapper .navbar .container {
   width: auto;
+  float: right;
+  padding-right: 200px;
 }
 
 
@@ -82,16 +84,48 @@ body {
 
 .bienvenida {
   background-color: white;
-  height: auto;
+  height: 100%;
 }
 
 .bienvenida h1{
   color: #1b6d85;
-  font-family: "NanumBarunGothic";
+  font-family: "Humnst777 Blk BT";
   font-weight: bold;
   text-align: center;
 }
 
+.areas
+{
+  background-color: #cce4b4ff;
+  font-family: "Humnst777 Blk BT";
+  color: #1b6d85;
+}
+
+.areas h2
+{
+    text-align: center;
+}
+
+.areas .col-lg-3
+{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.imagen{
+  float: left;
+  width: 50%;
+  padding-left: 30px;
+  padding-bottom: 30px
+}
+
+.texto{
+  float: right;
+  width: 50%;
+  color: #0f0f0f;
+  padding-right: 30px;
+  font-size: 3vmin
+}
 /* Featurettes
 ------------------------- */
 
