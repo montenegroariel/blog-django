@@ -97,12 +97,13 @@ body {
 .areas
 {
   background-color: #cce4b4ff;
-  font-family: "Humnst777 Blk BT";
+  /*font-family: "Humnst777 Blk BT";*/
   color: #1b6d85;
 }
 
 .areas h2
 {
+    font-family: "Humnst777 Blk BT";
     text-align: center;
 }
 
