@@ -124,7 +124,7 @@ body {
   width: 50%;
   color: #0f0f0f;
   padding-right: 30px;
-  font-size: 6vmin;
+  font-size: 3vmin;
 }
 /* Featurettes
 ------------------------- */
@@ -142,6 +142,13 @@ body {
 
 .footer p{
   font-family: "Humnst777 Blk BT";
+}
+
+.logo {
+  position:absolute;
+  left: 30px;
+  top: 10px;
+  z-index: 1000;
 }
 
 
@@ -184,4 +191,5 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+
 }
