@@ -1,0 +1,86 @@
+{% extends 'sidebar.html' %}
+{% load staticfiles %}
+
+{% block posts %}
+<div class="posts-block col-lg-9 col-md-9 col-sm-8 col-xs-12">
+
+{% if object_list %}
+
+    {% for publicacion in object_list  %}
+      <article class="post hentry">
+       <!--<div class="post-image">-->
+          <!--<a href="img/blog/blog-post3.jpg" data-rel="prettyPhoto">-->
+          <!--<span class="img-hover"></span>-->
+          <!--<span class="fullscreen"><i class="fa fa-search"></i></span>-->
+          <!--<img src="img/blog/blog-post3.jpg" alt="">-->
+          <!--</a>-->
+       <!--</div>-->
+      <header class="post-header">
+          <h3 class="content-title">{{ publicacion.titulo }}</h3>
+          <div class="blog-entry-meta">
+             <div class="blog-entry-meta-date">
+                <i class="fa fa-clock-o"></i>
+                <span class="blog-entry-meta-date-month">{{ publicacion.fecha|date:"M" }}</span>
+                <span class="blog-entry-meta-date-day">{{ publicacion.fecha|date:"d" }},</span>
+                <span class="blog-entry-meta-date-year">{{ publicacion.fecha|date:"Y" }}</span>
+             </div>
+
+             <div class="blog-entry-meta-author">
+                <!--<i class="fa fa-user"></i>-->
+                <!--<a href="#" class="blog-entry-meta-author">webmaster</a>-->
+             </div>
+             <div class="blog-entry-meta-comments">
+                <a href="http://www.facebook.com/sharer.php?u=http://www.capymef.org.ar/publicaciones/{{ publicacion.slug }}"> <i class="fa fa-facebook"></i>facebook </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://twitter.com/share?text={{publicacion.titulo}}&url=http://www.capymef.org.ar/publicaciones/{{ publicacion.slug }}"> <i class="fa fa-twitter"></i> twitter  </a>
+                &nbsp;&nbsp;&nbsp;{{ publicacion.visitas }} <i class="fa fa-star"></i>
+             </div>
+
+
+          </div>
+       </header>
+
+       <div class="post-content">
+          <p>
+             {{ publicacion.encabezado|safe }}
+          </p>
+       </div>
+       <footer class="post-footer">
+          <a class="btn-small btn-color" href="/publicaciones/{{publicacion.slug}}">Leer Mas</a>
+       </footer>
+    </article>
+    <div class="blog-divider"></div>
+
+    {% endfor %}
+
+
+    <div class="pagination-centered">
+       <ul class="pagination">
+        {% if page_obj.has_previous %}
+          <li class=""><a href="?page={{ page_obj.previous_page_number }}">«</a></li>
+        {% else %}
+          <li class="disabled"><a >«</a></li>
+        {% endif %}
+
+          <!--<li class="active">{{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</li>-->
+          <li><a href="#">{{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</a></li>
+          <!--<li><a href="#">3</a></li>-->
+          <!--<li><a href="#">4</a></li>-->
+          <!--<li><a href="#">5</a></li>-->
+
+        {% if page_obj.has_next %}
+           <li><a href="?page={{ page_obj.next_page_number }}">»</a></li>
+       {% endif %}
+       </ul>
+    </div>
+
+    {% else %}
+            Publicación no encontrada.
+    {% endif %}
+
+   </div>
+   <!-- Left Section End -->
+{% endblock %}
+
+{% block nav %}
+   <li>Publicaciones</li>
+{% endblock %}

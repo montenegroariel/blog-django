@@ -1,0 +1,118 @@
+{% extends 'base_site.html' %}
+
+{% block css %}
+{% endblock %}
+
+
+<div id="desplegable" style="height: 50px;width: 50px;background-color: red; display: none"></div>
+
+
+  {% block carousel %}
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="media/images/slides/1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="second-slide" src="media/images/slides/2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="third-slide" src="media/images/slides/3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img class="third-slide" src="media/images/slides/4.jpg" alt="">
+        </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+    {% endblock %}
+
+
+
+
+
+{% block content %}
+<div class="container marketing">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-circle" src="media/images/marketing/experiencia.png">
+          <h2>10 +</h2>
+            <p>AÑOS DE EXPERIENCIA</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="media/images/marketing/proyectos.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>200 +</h2>
+            <p>PROYECTOS CONCRETADOS</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="media/images/marketing/programas.png" alt="Generic placeholder image" width="190" height="140">
+          <h2>259 +</h2>
+            <p>PROGRAMAS ASOCIADOS</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="media/images/marketing/asesoria.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>24/7 +</h2>
+            <p>ASESORÍA TÉCNICA</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+</div>
+ <!-- START THE FEATURETTES -->
+
+<div class="container bienvenida">
+      <!-- FOOTER -->
+        <h1>BIENVENIDOS A EA+T</h1>
+
+    <div class="imagen" style="">
+        <img src="media/images/organizacion/empresa2.jpg" style="width: 95%">
+    </div>
+
+    <div class="texto" style="">
+        <p align="justify">
+        Somos un grupo de jóvenes profesionales formados en diferentes
+            especialidades. Desde el año 2007 trabajamos en la gestación
+            y formación de líderes, desarrollando una gestión superadora
+            a través de procesos económicos y comunitarios. Nuestro equipo
+            de trabajo logra un impacto constante mediante la transferencia
+            de conocimientos basados en la Investigación, Desarrollo e
+            Innovación (I+D+I) que, aplicados a los productos y servicios nos
+            ubica hoy en un lugar de privilegio y máxima responsabilidad.
+        </p>
+    </div>
+</div>
+
+<div class="container areas">
+    <h2>NUESTRAS ÁREAS</h2>
+       <div class="row">
+        <div class="col-lg-3">
+          <img class="" src="media/images/areas/tecnologia.png" alt="Generic placeholder image" height="109px">
+            <p>CIENCIA Y TECNOLOGÍA</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="" src="media/images/areas/desarrollo.png" alt="Generic placeholder image" height="109px">
+            <p>DESARROLLO LOCAL</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="" src="media/images/areas/empresa.png" alt="Generic placeholder image" height="109px">
+            <p>EMPRESAS Y EMPRENDIMIENTOS</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="" src="media/images/areas/cooperacion.png" alt="Generic placeholder image" height="109px">
+            <p>COOPERACIÓN INTERNACIONAL</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+</div>
+
+<div class="container bienvenida">
+    <h1>ENTIDADES VINCULADAS</h1>
+<br>
+    <div style="float: left; width: 400px; "><img src="media/images/entidades/logo2016.png" width="300px"></div>
+    <div style="float: left; "><img src="media/images/entidades/raci_new-zeland.png" width="200px"></div>
+    <div style="float: rig"><img src="media/images/entidades/top_ha_logo.png" height="50px"></div>
+</div>
+{% endblock %}
+
+
+
+{% block js %}
+{% endblock %}
+

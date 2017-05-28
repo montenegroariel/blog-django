@@ -1,0 +1,52 @@
+{% extends 'sidebar.html' %}
+{% load staticfiles %}
+
+{% block posts %}
+      <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12" id="contact-form">
+         <h3 class="title">Envianos un Mensaje</h3>
+         <p>
+            Nos pondremos en contacto a la brevedad.
+         </p>
+         <div class="divider"></div>
+         <form method="post" action="">
+            {% csrf_token %}
+            <fieldset>
+               <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                     <label>Nombre: <span>*</span></label>
+                     {{ form.nombre }}
+                     {{ form.nombre.errors }}
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                     <label>Email: <span>*</span></label>
+                     {{ form.mail }}
+                     {{ form.mail.errors }}
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <label>Mensaje: <span>*</span></label>
+                     {{ form.mensaje }}
+                     {{ form.mensaje.errors }}
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <label>Soy un humano: <span>*</span></label>
+                     {{ form.captcha }}
+                     {{ form.captcha.errors }}
+                  </div>
+               </div>
+            </fieldset>
+            <br>
+
+            <button class="btn-normal btn-color submit  bottom-pad" type="submit">Enviar Mensaje</button>
+            <div class="clearfix">
+            </div>
+         </form>
+      </div>
+{% endblock %}
+
+{% block nav %}
+   <li>Contacto</li>
+{% endblock %}
