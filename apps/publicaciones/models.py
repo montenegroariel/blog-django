@@ -1,7 +1,5 @@
 from django.db import models
-#from tinymce import models as tinymce_models
 from apps.categorias.models import Categoria
-#from filebrowser.fields import FileBrowseField
 
 
 class Publicacion(models.Model):
@@ -13,17 +11,13 @@ class Publicacion(models.Model):
     categoria = models.ForeignKey(Categoria)
     visitas = models.IntegerField(default=0)
 
-    # class Meta:
-    #     ordering = ['image', ]
-
-    verbose_name = 'publicacion'
-    verbose_name_plural = 'publicaciones'
-
     def __str__(self):
        return str(self.titulo)
 
     class Meta:
         ordering = ['-fecha']
+        verbose_name = 'Publicación'
+        verbose_name_plural = 'Publicaciones'
 
 
 class Documento(models.Model):
@@ -35,3 +29,5 @@ class Documento(models.Model):
 
     class Meta:
         ordering = ['-pk']
+        verbose_name = 'Documento'
+        verbose_name_plural = 'Documentos'

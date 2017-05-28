@@ -19,10 +19,11 @@ from django.contrib import admin
 from django.conf import settings
 from django.views.static import serve
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from eatnea.views import home
+from eatnea.views import home, nosotros
 
 urlpatterns = [
     url(r'^$', home, name='home'),
+    url(r'^nosotros', nosotros, name='nosotros'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^admin/filebrowser/', include('filebrowser.urls')),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),

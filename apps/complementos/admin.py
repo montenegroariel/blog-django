@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Pais, Ciudad, TipoEmpresa, CondicionEmpresa, \
+from .models import Pais, Provincia, TipoEmpresa, CondicionEmpresa, \
     Mes, Periodo, FormaPago
 
 
@@ -9,7 +9,7 @@ class PaisAdmin(admin.ModelAdmin):
     ]
 
 
-class CiudadAdmin(admin.ModelAdmin):
+class ProvinciaAdmin(admin.ModelAdmin):
     list_display = [
         'nombre',
     ]
@@ -36,15 +36,15 @@ class PeriodoAdmin(admin.ModelAdmin):
         'nombre',
     ]
 
-class FormaPagoAdmin(admin.ModelAdmin):
-    list_display = [
-        'nombre',
-    ]
+# class FormaPagoAdmin(admin.ModelAdmin):
+#     list_display = [
+#         'nombre',
+#     ]
 
 admin.site.register(Mes, MesAdmin)
 admin.site.register(Pais, PaisAdmin)
-admin.site.register(Ciudad, CiudadAdmin)
+admin.site.register(Provincia, ProvinciaAdmin)
 admin.site.register(Periodo, PeriodoAdmin)
-admin.site.register(FormaPago, FormaPagoAdmin)
+# admin.site.register(FormaPago, FormaPagoAdmin)
 admin.site.register(TipoEmpresa, TipoEmpresaAdmin)
 admin.site.register(CondicionEmpresa, CondicionEmpresaAdmin)

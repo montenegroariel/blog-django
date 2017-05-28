@@ -48,6 +48,7 @@ INSTALLED_APPS = (
     'apps.complementos',
     'apps.contactos',
     'apps.menus',
+    'apps.proyectos',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -107,7 +108,7 @@ THUMBNAIL_PROCESSORS = (
 
 SUIT_CONFIG = {
     # header
-    'ADMIN_NAME': 'CAPYMEF',
+    'ADMIN_NAME': 'EA+T',
     # 'HEADER_DATE_FORMAT': 'l, j. F Y',
     # 'HEADER_TIME_FORMAT': 'H:i',
 

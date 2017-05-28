@@ -3,9 +3,8 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   color: #cce4b4;
-  background-color: #0269c4;
 }
 
 
@@ -140,9 +139,15 @@ body {
   letter-spacing: -1px;
 }
 
+.footer{
+  background-color: #0269c4;
+}
+
 .footer p{
   font-family: "Humnst777 Blk BT";
 }
+
+
 
 .logo {
   position:absolute;
@@ -150,6 +155,18 @@ body {
   top: 10px;
   z-index: 1000;
 }
+
+.nosotros
+{
+  background-color: #cce4b4;
+  color: #1b6d85;
+  text-align: justify;
+  font-size: 2vmin;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+
 
 
 /* RESPONSIVE CSS
