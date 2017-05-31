@@ -157,7 +157,7 @@ STATICFILES_DIRS = (
 
 FILEBROWSER_SUIT_TEMPLATE = True
 
-STATIC_ROOT = '/static/'
+STATIC_ROOT = '/home/arielm/django/eatnea/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
 
 MEDIA_URL = '/media/'
