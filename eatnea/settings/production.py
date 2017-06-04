@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -151,17 +152,16 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static').replace('\\', '/'),
-)
-
 FILEBROWSER_SUIT_TEMPLATE = True
 
-STATIC_ROOT = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static').replace('\\', '/')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
 
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/admin'
+LOGIN_URL = '/admin'
 
 EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_HOST_USER = ''
