@@ -93,6 +93,30 @@ body {
   text-align: center;
 }
 
+.cartel
+{
+  color: #1b6d85;
+  font-family: "Humnst777 Blk BT";
+  font-weight: bold;
+  text-align: center;
+
+}
+
+/*
+.cartel
+{
+    font-family:"Humnst777 Blk BT";
+    position:absolute;
+    background-color:#fff;
+    opacity:0.8;
+    font-size:2vmin;
+    text-align:justify;
+    padding:20px;
+}
+*/
+
+
+
 .areas
 {
   background-color: #cce4b4;
@@ -146,6 +170,8 @@ body {
 .footer p{
   font-family: "Humnst777 Blk BT";
 }
+
+
 
 
 
