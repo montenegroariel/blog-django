@@ -1,83 +1,57 @@
 {% extends 'base_site.html' %}
 
 {% block css %}
-    <style>
-    body{
-        background-color: #ffffff;
-    }
-    </style>
+<style>
+  body { background-color: #ffffff; }
+</style>
 {% endblock %}
 
+<div style="width:50px; height:50px; background-color:red">
 
-<div id="desplegable" style="height: 50px;width: 50px;background-color: red; display: none"></div>
+</div>
 
-  {% block carousel %}
-    <div id="portada" class="portada">
-        <img style="width:100%; height: 400px;" src="media/images/portada/1.jpg" alt="">
-    </div><!-- /.carousel -->
-  {% endblock %}
+
+{% block carousel %}
+<div id="portada" class="portada">
+  <img style="width:100%; height: 300px;" src="media/images/portada/quienes_somos.jpg" alt="">
+</div><!-- /.carousel -->
+{% endblock %}
 
 
 {% block content %}
+<div class="row nosotros">
+  <div class="col-lg-8">
+  <h2>MISIÓN</h2>
+  <p>Liderar y formar líderes, en procesos abocados a la reducción de las asimetrías económicas, respetando la cultura y los valores de las comunidades apoyados en la vinculación, planificación, gestión tecnológica y transferencia de conocimientos, con eje en el desarrollo local, a partir de la Investigación, el desarrollo y la innovación (I+D+i).</p>
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
 
- <div class="row nosotros">
-        <div style="text-align: center" class="col-lg-4">
-            <img src="media/images/organizacion/profile.jpg">
-        </div><!-- /.col-lg-4 -->
+<div class="row nosotros">
+  <div class="col-lg-8">
+  <h2>VISIÓN</h2>
+  <p>Ser un actor pionero y líder en procesos económicos y comunitarios de cambio paradigmático, enmarcados en procesos de I+D+i y calidad continua.</p>
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
 
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+<div class="row nosotros">
+  <div class="col-lg-8">
+  <h2>POLÍTICA DE CALIDAD</h2>
+  <p>Reducir las asimetrías socio-económicas, a través de la transferencia de conocimiento para la formación de líderes, promoviendo el autodesarrollo tecnológico y sustentable mediante la innovación y la mejora continua del sistema de gestión de calidad.</p>
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
 
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-        </div><!-- /.col-lg-4 -->
- </div><!-- /.row -->
-
-     <div class="row nosotros">
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-        </div><!-- /.col-lg-4 -->
- </div><!-- /.row -->
- <div class="row nosotros">
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-        </div><!-- /.col-lg-4 -->
- </div><!-- /.row -->
-
+<div class="row nosotros">
+  <div class="col-lg-8">
+  <h2>OBJETIVOS DE CALIDAD</h2>
+  <p>
+Impulsar y acompañar el desarrollo económico sustentable de los actores sociales.
+Generar programas de transferencias de conocimiento para formar líderes.
+Generar y Fortalecer Áreas de I+D+i, promoviendo el autodesarrollo tecnológico.
+Desarrollar y mejorar continuamente el “Sistema de Gestión de Calidad" (SGC).
+Difundir y propiciar la gestión dentro del ámbito de la calidad.</p>
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
 {% endblock %}
-
-
 
 {% block js %}
 {% endblock %}
-

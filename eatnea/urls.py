@@ -19,11 +19,15 @@ from django.contrib import admin
 from django.conf import settings
 from django.views.static import serve
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from eatnea.views import home, nosotros
+from eatnea.views import home, nosotros, quienessomos, equipo, logros, formaparte
 
 urlpatterns = [
     url(r'^$', home, name='home'),
     url(r'^nosotros', nosotros, name='nosotros'),
+    url(r'^quienes-somos', quienessomos, name='quienes-somos'),
+    url(r'^equipo', equipo, name='equipo'),
+    url(r'^logros', logros, name='logros'),
+    url(r'^forma-parte', formaparte, name='forma-parte'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^admin/filebrowser/', include('filebrowser.urls')),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT, }),
