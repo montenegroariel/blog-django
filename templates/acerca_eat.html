@@ -1,0 +1,50 @@
+{% extends 'base_site.html' %}
+
+{% block css %}
+    <style>
+    body{
+        background-color: #ffffff;
+    }
+    </style>
+{% endblock %}
+
+
+<div id="desplegable" style="height: 50px;width: 50px;background-color: red; display: none"></div>
+
+  {% block carousel %}
+    <div id="portada" class="portada">
+        <img style="width:100%; height: 300px;" src="media/images/portada/acerca_eat.jpg" alt="">
+    </div><!-- /.carousel -->
+  {% endblock %}
+
+
+{% block content %}
+
+ <div style="text-align:center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vFqcT22dyco" frameborder="0" allowfullscreen></iframe>
+ </div><!-- /.row -->
+
+<div class="row nosotros">
+    <div style="text-align:center;" class="">
+        <h2>INSTITUCIONAL EA+T</h2>
+    </div>
+</div><!-- /.row -->
+<br>
+<div style="width:60%; margin-right:auto; margin-left:auto; color:black;">
+        <p align="justify">
+         La Asociación Civil Educación, Ambiente y Territorio es una Organización No Gubernamental para el Desarrollo fundada en el año 2007 en la capital de la Provincia de Formosa – Argentina. Desde su acto constitutivo ha fijado su labor en torno a la resolución de múltiples problemáticas asistidos principalmente por una lógica y política de calidad que, a través de estos años, dio IDENTIDAD a la Institución.<br>
+EA+T es consecuencia del factor humano que lo compone, jóvenes profesionales especializados que sumado a la vocación de servicio y trabajo en equipo posicionaron a la Institución en un lugar de Privilegio y máxima responsabilidad.<br>
+Uno de los pilares de esta estructura es la correcta descentralización de la gestión, lo que permite contar con áreas específicas naciendo en cada una de ellas los principios básicos de los servicios brindados, y por consiguiente, los logros obtenidos son el resultado del despliegue de sus profesionales a estas áreas. Hoy cuenta con las áreas de: CIENCIA Y TECNOLOGÍA, DESARROLLO LOCAL, EMPRESAS Y EMPRENDIMIENTOS Y COOPERACIÓN INTERNACIONAL. Cada una de ellas, cumplen un rol fundamental y coordinado, realizando una tarea en común, como es la de VINCULAR a Instituciones en todos sus niveles, empresas y emprendedores independientes con EA+T, de esta forma todos juntos como actores primarios encuentran un entorno de cooperación en la construcción de logros.<br>
+Cooperación y Vinculación, no es solo un decir, para esta Institución es sinónimo del trabajo cotidiano, y ha logrado establecer vínculos a nivel provincial con municipios y estamentos, a nivel regional con instituciones y profesionales, a nivel nacional con ministerios y redes de cooperación como RACI, a nivel internacional junto a la embajada de Australia y Suiza, a nivel mundial con organizaciones de financiamiento y fortalecimiento llegando a trabajar en conjunto con la Organización de las Naciones Unidas. Esto permite canalizar Donaciones, Financiamiento, Capacitación y cuanto recurso se precise para materializar logros en cada servicio. En ese mismo contexto es que diversas instituciones, entidades del tercer sector, empresas consolidadas, pymes y emprendedores independientes han encontrado en nuestra estructura un respaldo esencial, y es por esto que EA+T cuenta, además, con su propia Incubadora de Empresas tradicionales y tecnológicas denominada IDEA+T en la que trabajan no solo los profesionales de la Institución sino de toda la región NEA.<br>
+Esto es Educación, Ambiente y Territorio, un espacio de trabajo y cooperación, un equipo formado, disciplinado y decidido a contraer logros mediante acciones, una gran familia sensibilizada que gestiona, como lo dice el eslogan  “Acercando Ciencia y Tecnología a la Comunidad”.
+
+        </p>
+</div>
+
+<br>
+{% endblock %}
+
+
+
+{% block js %}
+{% endblock %}

@@ -19,10 +19,12 @@ from django.contrib import admin
 from django.conf import settings
 from django.views.static import serve
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from eatnea.views import home, nosotros, quienessomos, equipo, logros, formaparte
+from eatnea.views import home, nosotros, quienessomos, equipo, logros, formaparte, acercaeat, cienciatecnologia, cooperacioninternacional, desarrollolocal, empresasemprendimientos
+
 
 urlpatterns = [
     url(r'^$', home, name='home'),
+    url(r'^acerca-eat', acercaeat, name='acerca-eat'),
     url(r'^nosotros', nosotros, name='nosotros'),
     url(r'^quienes-somos', quienessomos, name='quienes-somos'),
     url(r'^equipo', equipo, name='equipo'),
@@ -30,8 +32,15 @@ urlpatterns = [
     url(r'^forma-parte', formaparte, name='forma-parte'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^admin/filebrowser/', include('filebrowser.urls')),
+    # Menu Areas
+    url(r'^ciencia-tecnologia', cienciatecnologia, name='ciencia-tecnologia'),
+    url(r'^cooperacion-internacional', cooperacioninternacional, name='cooperacion-internacional'),
+    url(r'^desarrollo-local', desarrollolocal, name='desarrollo-local'),
+    url(r'^empresas-emprendimientos', empresasemprendimientos, name='empresas-emprendimientos'),
+    # Server static files
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT, }),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT, }),
+
 ]
 
 if settings.DEBUG == True:
