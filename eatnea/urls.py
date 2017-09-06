@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.views.static import serve
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from eatnea.views import home, nosotros, quienessomos, equipo, logros, formaparte, acercaeat, cienciatecnologia, cooperacioninternacional, desarrollolocal, empresasemprendimientos
+from eatnea.views import home, nosotros, quienessomos, equipo, logros, formaparte, acercaeat, cienciatecnologia, cooperacioninternacional, desarrollolocal, empresasemprendimientos, quehacemos
 
 
 urlpatterns = [
@@ -33,6 +33,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^admin/filebrowser/', include('filebrowser.urls')),
     # Menu Areas
+    url(r'^que-hacemos', quehacemos, name='que-hacemos'),
     url(r'^ciencia-tecnologia', cienciatecnologia, name='ciencia-tecnologia'),
     url(r'^cooperacion-internacional', cooperacioninternacional, name='cooperacion-internacional'),
     url(r'^desarrollo-local', desarrollolocal, name='desarrollo-local'),

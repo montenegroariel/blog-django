@@ -24,6 +24,9 @@ def acercaeat(request):
 
 # AREAS
 
+def quehacemos(request):
+    return render(request, 'que_hacemos.html')
+
 def cienciatecnologia(request):
     return render(request, 'ciencia_tecnologia.html')
 
