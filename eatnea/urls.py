@@ -19,7 +19,11 @@ from django.contrib import admin
 from django.conf import settings
 from django.views.static import serve
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+<<<<<<< HEAD
 from eatnea.views import home, nosotros, quienessomos, equipo, logros, formaparte, acercaeat, cienciatecnologia, cooperacioninternacional, desarrollolocal, empresasemprendimientos
+=======
+from eatnea.views import home, nosotros, quienessomos, equipo, logros, formaparte, acercaeat, cienciatecnologia, cooperacioninternacional, desarrollolocal, empresasemprendimientos, quehacemos
+>>>>>>> f7dbadd0758dc7bca38a027b0d100c3b72eec60a
 
 
 urlpatterns = [
@@ -33,6 +37,10 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^admin/filebrowser/', include('filebrowser.urls')),
     # Menu Areas
+<<<<<<< HEAD
+=======
+    url(r'^que-hacemos', quehacemos, name='que-hacemos'),
+>>>>>>> f7dbadd0758dc7bca38a027b0d100c3b72eec60a
     url(r'^ciencia-tecnologia', cienciatecnologia, name='ciencia-tecnologia'),
     url(r'^cooperacion-internacional', cooperacioninternacional, name='cooperacion-internacional'),
     url(r'^desarrollo-local', desarrollolocal, name='desarrollo-local'),
