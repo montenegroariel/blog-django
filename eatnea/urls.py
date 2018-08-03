@@ -32,6 +32,7 @@ urlpatterns = [
     url(r'^forma-parte', formaparte, name='forma-parte'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^admin/filebrowser/', include('filebrowser.urls')),
+    url(r'^publicaciones', include('apps.publicaciones.urls', namespace='publicaciones')),
     # Menu Areas
     url(r'^que-hacemos', quehacemos, name='que-hacemos'),
     url(r'^ciencia-tecnologia', cienciatecnologia, name='ciencia-tecnologia'),
