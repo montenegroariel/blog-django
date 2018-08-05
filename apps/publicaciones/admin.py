@@ -12,7 +12,7 @@ class PublicacionAdmin(admin.ModelAdmin):
 
         (None, {
             'classes': ('suit-tab suit-tab-media',),
-            'fields': ['fecha', 'titulo', 'slug', 'categoria', 'visitas'],
+            'fields': ['fecha', 'titulo', 'portada', 'slug', 'categoria', 'visitas'],
         }),
 
         ('CKEditor', {

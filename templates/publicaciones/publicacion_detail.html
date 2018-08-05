@@ -1,0 +1,31 @@
+{% extends 'base_site.html' %}
+
+{% block css %}
+    <style>
+    body{
+        background-color: #ffffff;
+    }
+    </style>
+{% endblock %}
+
+
+
+{% block content %}
+
+<br><br>
+
+<div class="row nosotros"  style="background-color:#ffffff;">
+  <div class="col-lg-12">
+    <h3>{{ publicacion.titulo }}</h3>
+    <p>{{ publicacion.encabezado|safe }}</p>
+    <p>{{ publicacion.contenido|safe }}</p>
+    <a href="/publicaciones">Volver</a>
+    </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+
+{% endblock %}
+
+
+
+{% block js %}
+{% endblock %}

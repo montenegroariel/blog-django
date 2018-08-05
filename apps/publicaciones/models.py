@@ -5,6 +5,7 @@ from apps.categorias.models import Categoria
 class Publicacion(models.Model):
     fecha = models.DateTimeField()
     titulo = models.CharField(max_length=200)
+    portada = models.ImageField(upload_to='portada', null=True, blank=True) 
     slug = models.SlugField(unique=False)
     encabezado = models.TextField()
     contenido = models.TextField()
