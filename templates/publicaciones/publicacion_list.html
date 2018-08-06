@@ -24,7 +24,7 @@
   </div><!-- /.col-lg-4 -->
 
   <div class="col-lg-9">
-    <h3>{{ publicacion.titulo }}</h3>
+    <h3><a href="/publicaciones/{{publicacion.slug}}">{{ publicacion.titulo }}</a></h3>
     <p>{{ publicacion.encabezado|safe }}</p>
     <a class="btn-small btn-color" href="/publicaciones/{{publicacion.slug}}">Leer Mas</a>
     </div><!-- /.col-lg-4 -->
@@ -32,7 +32,7 @@
 
 {% endfor %}
 
-<div align="center">
+<div align="center" font-size=>
     <ul class="pagination">
      {% if page_obj.has_previous %}
        <li class=""><a href="?page={{ page_obj.previous_page_number }}">«</a></li>
