@@ -170,3 +170,7 @@ EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = 'Sitio Web <mail@sever.com>'
+
+
+MMEDIA_URL = '/media/'
+CKEDITOR_UPLOAD_PATH = 'uploads/'

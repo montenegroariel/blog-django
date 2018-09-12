@@ -22,7 +22,7 @@ class Publicacion(models.Model):
 
 
 class Documento(models.Model):
-    documento = models.FileField(upload_to='images')
+    documento = models.FileField(upload_to='documentos')
 
     def __str__(self):
        return  str(self.documento)
@@ -32,3 +32,16 @@ class Documento(models.Model):
         ordering = ['-pk']
         verbose_name = 'Documento'
         verbose_name_plural = 'Documentos'
+
+
+class Imagen(models.Model):
+    imagen = models.FileField(upload_to='uploads')
+
+    def __str__(self):
+       return  str(self.imagen)
+
+
+    class Meta:
+        ordering = ['-pk']
+        verbose_name = 'Imagen'
+        verbose_name_plural = 'Imagen'

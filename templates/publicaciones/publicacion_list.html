@@ -1,64 +1,75 @@
 {% extends 'base_site.html' %}
 
-{% block css %}
-    <style>
-    body{
-        background-color: #ffffff;
-    }
-    </style>
-{% endblock %}
-
-
-
 {% block content %}
+  <!-- Page Content -->
+  <div class="container">
 
-{% if object_list %}
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Noticias
+        
+      </h1>
 
-
-<br><br>
-{% for publicacion in object_list  %}
-
-<div class="row nosotros"  style="background-color:#ffffff;">
-  <div class="col-lg-3" align="center">
-              <img src="/media/{{ publicacion.portada }}" width="60%">
-  </div><!-- /.col-lg-4 -->
-
-  <div class="col-lg-9">
-    <h3><a href="/publicaciones/{{publicacion.slug}}">{{ publicacion.titulo }}</a></h3>
-    <p>{{ publicacion.encabezado|safe }}</p>
-    <a class="btn-small btn-color" href="/publicaciones/{{publicacion.slug}}">Leer Mas</a>
-    </div><!-- /.col-lg-4 -->
-</div><!-- /.row -->
-
-{% endfor %}
-
-<div align="center" font-size=>
-    <ul class="pagination">
-     {% if page_obj.has_previous %}
-       <li class=""><a href="?page={{ page_obj.previous_page_number }}">«</a></li>
-     {% else %}
-       <li class="disabled"><a >«</a></li>
-     {% endif %}
-
-       <!--<li class="active">{{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</li>-->
-       <li><a href="#">{{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</a></li>
-       <!--<li><a href="#">3</a></li>-->
-       <!--<li><a href="#">4</a></li>-->
-       <!--<li><a href="#">5</a></li>-->
-
-     {% if page_obj.has_next %}
-        <li><a href="?page={{ page_obj.next_page_number }}">»</a></li>
-    {% endif %}
-    </ul>
- </div>
-
- {% else %}
- Publicación no encontrada.
-{% endif %}
-
-{% endblock %}
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/">Inicio</a>
+        </li>
+        <li class="breadcrumb-item active">Noticias</li>
+      </ol>
 
 
 
-{% block js %}
-{% endblock %}
+      {% if object_list %}
+
+      
+      {% for publicacion in object_list  %}
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-3">
+              <a href="/publicaciones/{{publicacion.slug}}">
+                <img class="img-fluid rounded" src="/media/{{ publicacion.portada }}" alt="">
+              </a>
+            </div>
+            <div class="col-lg-9">
+              <h2 class="card-title">{{ publicacion.titulo }}</h2>
+              <p class="card-text">{{ publicacion.encabezado|safe }}</p>
+              <a href="/publicaciones/{{publicacion.slug}}" class="btn btn-primary">Leer más &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          {{publicacion.fecha}}
+        </div>
+      </div>
+      {% endfor %}
+
+
+      <!-- Pagination -->
+      <ul class="pagination justify-content-center mb-4">
+        {% if page_obj.has_previous %}
+        <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">&larr;«</a></li>
+        {% else %}
+        <li class="page-item disabled">«</li>
+        {% endif %}
+
+        <li class="page-item"><a href="#">{{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</a></li>
+
+        {% if page_obj.has_next %}
+        <li class="page-item disabled"><a class="page-link" href="?page={{ page_obj.next_page_number }}">»&rarr;</a></li>
+        {% endif %}
+      </ul>
+
+
+
+      
+       {% else %}
+       Publicación no encontrada.
+       {% endif %}
+      
+
+
+
+    </div>
+  </div>
+  <!-- /.container -->
+  {% endblock %}

@@ -1,5 +1,5 @@
 from django import forms
-from .models import Publicacion, Documento
+from .models import Publicacion, Documento, Imagen
 from suit_ckeditor.widgets import CKEditorWidget
 
 class PublicacionForm(forms.ModelForm):
@@ -30,4 +30,15 @@ class DocumentoForm(forms.ModelForm):
 
     class Meta:
         model = Documento
+        fields = '__all__'
+
+
+class ImagenForm(forms.ModelForm):
+    imagen = forms.FileField(
+        label='Seleccione un archivo',
+        help_text='max. 42 megabytes'
+    )
+
+    class Meta:
+        model = Imagen
         fields = '__all__'

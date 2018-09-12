@@ -1,0 +1,306 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EA+T Nuevo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    {% block css %}
+    {% endblock %}
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <div style="position: absolute; z-index: 1000; left: 10px; top: 5px;"><img src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/organizacion/logo.png"></div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">INICIO</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                NOSOTROS
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="quienes-somos">Quienes Somos</a>
+                <a class="dropdown-item" href="equipo">Equipo EA+T</a>
+                <a class="dropdown-item" href="logros">Logros y Distinciones</a>
+                <a class="dropdown-item" href="forma-parte">Forma Parte</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                INSTITUCIONAL
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="acerca-eat">Acerca de EA+T</a>
+                <a class="dropdown-item" href="#">Entidades Asociadas</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                AREAS
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="que-hacemos">Que hacemos</a>
+                <a class="dropdown-item" href="ciencia-tecnologia">Ciencia y Tecnología</a>
+                <a class="dropdown-item" href="cooperacion-internacional">Cooperación Internacional</a>
+                <a class="dropdown-item" href="desarrollo-local">Desarrollo Local</a>
+                <a class="dropdown-item" href="empresas-emprendimientos">Empresas y Emprendimientos</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publicaciones">NOTICIAS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% block carousel %}
+    
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('images/1.jpg')">
+
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('images/2.jpg')">
+
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('images/4.jpg')">
+
+          </div>
+        </div>
+        
+       
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+    {% endblock %}
+
+    {% block content %}
+    <!-- Page Content -->
+    <div class="container">
+
+      <hr>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/marketing/experiencia.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title" align="center">
+                <a href="#">+ 10 AÑOS DE EXPERIENCIA </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/marketing/proyectos.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title" align="center">
+                <a href="#"> + 200 PROYECTOS CONCRETADOS</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/marketing/programas.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title" align="center">
+                <a href="#">+ 259 PROGRAMAS ASOCIADOS</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/marketing/asesoria.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title" align="center">
+                <a href="#">24/7 ASESORIA TECNICA</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- Features Section -->
+<div class="row">
+  <div class="col-lg-6">
+    <h2>BIENVENIDOS A EA+T </h2>
+    <p align="justify">Somos un grupo de jóvenes profesionales formados en diferentes especialidades. Desde el año 2007 trabajamos en la gestación y formación de líderes, desarrollando una gestión superadora a través de procesos económicos y comunitarios. Nuestro equipo de trabajo logra un impacto constante mediante la transferencia de conocimientos basados en la Investigación, Desarrollo e Innovación (I+D+I) que, aplicados a los productos y servicios nos ubica hoy en un lugar de privilegio y máxima responsabilidad. </p>
+  </div>
+  <div class="col-lg-6">
+    <img class="img-fluid rounded" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/organizacion/empresa2.jpg" alt="">
+  </div>
+</div>
+<!-- /.row -->
+
+
+
+    
+
+      <!-- Portfolio Section -->
+      <h2>NUESTRAS ÁREAS</h2>
+
+      <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/areas/tecnologia.jpg" alt=""></a>
+                <div class="card-body">
+                  <h5 class="card-title" align="center">
+                    <a href="#">CIENCIA Y TECNOLOGÍA</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/areas/desarrollo.jpg" alt=""></a>
+                <div class="card-body">
+                  <h5 class="card-title" align="center">
+                    <a href="#">DESARROLLO LOCAL</a>
+                  </h5>
+                </div>  
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/areas/empresa.jpg" alt=""></a>
+                <div class="card-body">
+                  <h5 class="card-title" align="center">
+                    <a href="#">EMPRESAS Y EMPRENDIMIENTOS</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/areas/cooperacion.jpg" alt=""></a>
+                <div class="card-body">
+                  <h5 class="card-title" align="center">
+                    <a href="#">COOPERACION INTERNACIONAL</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+      </div>
+      <!-- /.row -->
+
+      
+  <!-- Portfolio Section -->
+  <h2>ENTIDADES VINCULADAS</h2>
+
+  <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/entidades/camefor.png" alt=""></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/entidades/embajada.png" alt=""></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/entidades/fomicro.png" alt=""></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/home/ariel/django/eatnea/startbootstrap-modern-business-gh-pages/media/images/entidades/incuba.png" alt=""></a>
+          </div>
+        </div>
+  </div>
+  <!-- /.row -->
+
+
+      <hr>
+
+
+    </div>
+    <!-- /.container -->
+    {% endblock %}
+
+
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+
+        <div class="row">
+            <div class="col-lg-6 portfolio-item">
+                <div class="card h-100 bg-dark">
+                    <div class="card-body bg-dark">
+                    <p class="text-white">HORARIO DE ATENCIÓN<br><br>
+                      De Lunes a Viernes de 08:00 hs. a 12:00 hs.<br>
+                      Sábados de 09:00 hs. a 12:00 hs.<br>
+                      
+                      Educación Ambiente y Territorio | 370 - 4424429 </p>
+                  </div>  
+                </div>
+            </div>
+            <div class="col-lg-6 portfolio-item">
+                <div class="card h-100 bg-dark ">
+                  <div class="card-body bg-dark" style="text-align: right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.5368328975796!2d-58.17500714926783!3d-26.17920968336776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ca5ef4fda4af7%3A0x33c2d5189e380b0b!2sMitre+330%2C+P3600NPV+Formosa!5e0!3m2!1ses-419!2sar!4v1493923382288" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+            </div>
+          </div>      
+        
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    {% block js %}
+    {% endblock %}
+  </body>
+
+</html>
