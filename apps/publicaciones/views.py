@@ -24,7 +24,7 @@ class PublicacionListView(ListView):
         if 'buscar' in self.request.GET:
             query = Publicacion.objects.filter(titulo__icontains=self.request.GET['buscar'])
         else:
-            query = Publicacion.objects.filter(fecha__lt = datetime.now())
+            query = Publicacion.objects.filter(fecha__lt = datetime.now()).order_by('fecha')
         return query
 
 
